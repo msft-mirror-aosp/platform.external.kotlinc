@@ -1,5 +1,0 @@
-rule kotlin.test.** @0
-rule kotlin.** com.android.@0
-
-rule org.jetbrains.** com.android.@0
-
