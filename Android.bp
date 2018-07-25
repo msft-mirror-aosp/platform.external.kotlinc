@@ -1,22 +1,13 @@
 java_import {
-    name: "kotlin-stdlib",
+    name: "kotlin-reflect",
     host_supported: true,
-    jars: ["lib/kotlin-stdlib.jar"],
+    jars: ["lib/kotlin-reflect.jar"],
     sdk_version: "core_current",
 }
 
 java_import {
-    name: "kotlin-test",
+    name: "kotlin-stdlib",
     host_supported: true,
-    jars: ["lib/kotlin-test.jar", "lib/kotlin-test-junit.jar"],
-    sdk_version: "core_current",
-}
-
-// On-device shared library with kotlin.* package renamed to com.android.kotlin.*
-java_library {
-    name: "kotlin-stdlib-renamed",
-    static_libs: ["kotlin-stdlib"],
-    no_framework_libs: true,
-    jarjar_rules: "jarjar-rules.txt",
+    jars: ["lib/kotlin-stdlib.jar"],
     sdk_version: "core_current",
 }
