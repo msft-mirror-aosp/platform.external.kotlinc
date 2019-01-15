@@ -11,3 +11,13 @@ java_import {
     jars: ["lib/kotlin-stdlib.jar"],
     sdk_version: "core_current",
 }
+
+java_import {
+    name: "kotlin-test",
+    host_supported: true,
+    jars: [
+        "lib/kotlin-test.jar",
+        "lib/kotlin-test-junit.jar",
+    ],
+    sdk_version: "core_current",
+}
