@@ -5,11 +5,13 @@ java_import {
     sdk_version: "core_current",
 }
 
+// exclude_dirs is used to remove META-INF resources that causes issues for jarjar builds
 java_import {
     name: "kotlin-reflect",
     host_supported: true,
     jars: ["lib/kotlin-reflect.jar"],
     sdk_version: "core_current",
+    exclude_dirs: ["META-INF/versions"],
 }
 
 java_import {
