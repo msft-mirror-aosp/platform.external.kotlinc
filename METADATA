@@ -7,17 +7,17 @@ third_party {
   }
   url {
     type: ARCHIVE
-    value: "https://github.com/JetBrains/kotlin/releases/download/v1.4.20/kotlin-compiler-1.4.20.zip"
+    value: "http://storage.googleapis.com/r8-releases/kotlin-releases/1.4.20-google-ir-02/kotlin-compiler-1.4.20-google-ir-02.zip"
   }
   url {
     type: ARCHIVE
     value: "https://github.com/JetBrains/intellij-community/raw/171/lib/src/trove4j_src.jar"
   }
-  version: "v1.4.20"
+  version: "v1.4.20-google-ir-02"
   license_type: RECIPROCAL
   last_upgrade_date {
     year: 2020
-    month: 11
-    day: 19
+    month: 12
+    day: 3
   }
 }
