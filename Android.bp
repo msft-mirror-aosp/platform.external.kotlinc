@@ -3,6 +3,7 @@ java_import {
     host_supported: true,
     jars: ["lib/annotations-13.0.jar"],
     sdk_version: "core_current",
+    notice: "license/NOTICE.txt",
 }
 
 java_import {
@@ -10,6 +11,7 @@ java_import {
     host_supported: true,
     jars: ["lib/kotlin-reflect.jar"],
     sdk_version: "core_current",
+    notice: "license/NOTICE.txt",
 }
 
 java_import {
@@ -17,6 +19,7 @@ java_import {
     host_supported: true,
     jars: ["lib/kotlin-stdlib.jar"],
     sdk_version: "core_current",
+    notice: "license/NOTICE.txt",
 }
 
 java_import {
@@ -24,6 +27,7 @@ java_import {
     host_supported: true,
     jars: ["lib/kotlin-stdlib-jdk7.jar"],
     sdk_version: "core_current",
+    notice: "license/NOTICE.txt",
 }
 
 java_import {
@@ -31,6 +35,7 @@ java_import {
     host_supported: true,
     jars: ["lib/kotlin-stdlib-jdk8.jar"],
     sdk_version: "core_current",
+    notice: "license/NOTICE.txt",
 }
 
 java_import {
@@ -41,4 +46,5 @@ java_import {
         "lib/kotlin-test-junit.jar",
     ],
     sdk_version: "core_current",
+    notice: "license/NOTICE.txt",
 }
