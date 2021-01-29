@@ -7,17 +7,22 @@ third_party {
   }
   url {
     type: ARCHIVE
-    value: "https://github.com/JetBrains/kotlin/releases/download/v1.4.10/kotlin-compiler-1.4.10.zip"
+    value: "http://storage.googleapis.com/r8-releases/kotlin-releases/1.4.20-google-ir-02/kotlin-compiler-1.4.20-google-ir-02.zip"
   }
   url {
     type: ARCHIVE
     value: "https://github.com/JetBrains/intellij-community/raw/171/lib/src/trove4j_src.jar"
   }
-  version: "v1.4.10"
-  license_type: RECIPROCAL
+  version: "v1.4.20-google-ir-02"
+  # would be RECIPROCAL save for:
+  #   license/third_party/rhino_LICENSE.txt
+  #   license/third_party/testdata/findbugs_license.txt
+  #   license/third_party/trove_license.txt
+  #   license/third_party/trove_readme_license.txt
+  license_type: RESTRICTED
   last_upgrade_date {
     year: 2020
-    month: 9
-    day: 10
+    month: 12
+    day: 3
   }
 }
