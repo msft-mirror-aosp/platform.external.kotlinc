@@ -14,11 +14,11 @@ third_party {
     value: "https://github.com/JetBrains/intellij-community/raw/171/lib/src/trove4j_src.jar"
   }
   version: "v1.6.10"
-  # would be RECIPROCAL save for:
-  #   license/third_party/rhino_LICENSE.txt
-  #   license/third_party/testdata/findbugs_license.txt
-  #   license/third_party/trove_license.txt
-  #   license/third_party/trove_readme_license.txt
+  license_note: "would be RECIPROCAL save for:\n"
+  "   license/third_party/rhino_LICENSE.txt\n"
+  "   license/third_party/testdata/findbugs_license.txt\n"
+  "   license/third_party/trove_license.txt\n"
+  "   license/third_party/trove_readme_license.txt"
   license_type: RESTRICTED
   last_upgrade_date {
     year: 2021
