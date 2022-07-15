@@ -21,7 +21,6 @@ java_import {
     host_supported: true,
     jars: ["lib/annotations-13.0.jar"],
     sdk_version: "core_current",
-    notice: "license/NOTICE.txt",
 }
 
 // exclude_dirs is used to remove META-INF resources for java multi-release
@@ -33,7 +32,6 @@ java_import {
     jars: ["lib/kotlin-reflect.jar"],
     sdk_version: "core_current",
     exclude_dirs: ["META-INF/versions"],
-    notice: "license/NOTICE.txt",
 }
 
 java_import {
@@ -42,7 +40,6 @@ java_import {
     jars: ["lib/kotlin-stdlib.jar"],
     sdk_version: "core_current",
     exclude_dirs: ["META-INF/versions"],
-    notice: "license/NOTICE.txt",
     apex_available: [
         "//apex_available:platform",
         "//apex_available:anyapex",
@@ -55,7 +52,6 @@ java_import {
     jars: ["lib/kotlin-stdlib-jdk7.jar"],
     sdk_version: "core_current",
     exclude_dirs: ["META-INF/versions"],
-    notice: "license/NOTICE.txt",
 }
 
 java_import {
@@ -64,7 +60,6 @@ java_import {
     jars: ["lib/kotlin-stdlib-jdk8.jar"],
     sdk_version: "core_current",
     exclude_dirs: ["META-INF/versions"],
-    notice: "license/NOTICE.txt",
     apex_available: [
         "//apex_available:platform",
         "//apex_available:anyapex",
@@ -109,7 +104,6 @@ java_import {
         "external_kotlinc_teamcity_service_messages_license",
         "external_kotlinc_lodash_license",
     ],
-    notice: "license/NOTICE.txt",
 }
 
 // See: http://go/android-license-faq
