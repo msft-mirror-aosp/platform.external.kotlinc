@@ -58,7 +58,10 @@ java_import {
 java_import {
     name: "kotlin-stdlib-jdk8",
     host_supported: true,
-    jars: ["lib/kotlin-stdlib-jdk8.jar"],
+    jars: [
+        "lib/kotlin-stdlib-jdk8.jar",
+        "lib/kotlin-stdlib-jdk7.jar",
+    ],
     sdk_version: "core_current",
     exclude_dirs: ["META-INF/versions"],
     apex_available: [
