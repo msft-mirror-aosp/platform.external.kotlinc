@@ -2,7 +2,6 @@ package {
     default_applicable_licenses: [
         "external_kotlinc_license",
         "external_kotlinc_asm_license",
-        "external_kotlinc_pcollections_license",
         "external_kotlinc_dart_license",
         "external_kotlinc_rhino_license",
         "external_kotlinc_qunit_license",
@@ -79,7 +78,6 @@ java_import {
     licenses: [
         "external_kotlinc_license",
         "external_kotlinc_asm_license",
-        "external_kotlinc_pcollections_license",
         "external_kotlinc_dart_license",
         "external_kotlinc_rhino_license",
         "external_kotlinc_qunit_license",
@@ -382,19 +380,6 @@ license {
     copyright_notice: "Copyright (c) 2016 Jamie Sherriff",
     license_text: [
         "license/third_party/mocha-teamcity-reporter_LICENSE.txt",
-    ],
-}
-
-license {
-    name: "external_kotlinc_pcollections_license",
-    package_name: "PCollections",
-    visibility: [":__subpackages__"],
-    license_kinds: [
-        "SPDX-license-identifier-MIT",
-    ],
-    copyright_notice: "Derived from PCollections, A Persistent Java Collections Library (https://pcollections.org/)",
-    license_text: [
-        "license/third_party/pcollections_LICENSE.txt",
     ],
 }
 
