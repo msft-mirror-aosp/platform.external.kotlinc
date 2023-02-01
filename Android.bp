@@ -2,7 +2,6 @@ package {
     default_applicable_licenses: [
         "external_kotlinc_license",
         "external_kotlinc_asm_license",
-        "external_kotlinc_pcollections_license",
         "external_kotlinc_dart_license",
         "external_kotlinc_rhino_license",
         "external_kotlinc_qunit_license",
@@ -13,6 +12,7 @@ package {
         "external_kotlinc_assemblyscript_license",
         "external_kotlinc_aosp_license",
         "external_kotlinc_asmble_license",
+        "external_kotlinc_sun_license",
     ],
 }
 
@@ -57,7 +57,10 @@ java_import {
 java_import {
     name: "kotlin-stdlib-jdk8",
     host_supported: true,
-    jars: ["lib/kotlin-stdlib-jdk8.jar"],
+    jars: [
+        "lib/kotlin-stdlib-jdk8.jar",
+        "lib/kotlin-stdlib-jdk7.jar",
+    ],
     sdk_version: "core_current",
     exclude_dirs: ["META-INF/versions"],
     apex_available: [
@@ -78,7 +81,6 @@ java_import {
     licenses: [
         "external_kotlinc_license",
         "external_kotlinc_asm_license",
-        "external_kotlinc_pcollections_license",
         "external_kotlinc_dart_license",
         "external_kotlinc_rhino_license",
         "external_kotlinc_qunit_license",
@@ -385,19 +387,6 @@ license {
 }
 
 license {
-    name: "external_kotlinc_pcollections_license",
-    package_name: "PCollections",
-    visibility: [":__subpackages__"],
-    license_kinds: [
-        "SPDX-license-identifier-MIT",
-    ],
-    copyright_notice: "Derived from PCollections, A Persistent Java Collections Library (https://pcollections.org/)",
-    license_text: [
-        "license/third_party/pcollections_LICENSE.txt",
-    ],
-}
-
-license {
     name: "external_kotlinc_prototype_license",
     visibility: [":__subpackages__"],
     license_kinds: [
@@ -444,6 +433,19 @@ license {
         "license/third_party/scala_license.txt",
     ],
 }
+
+license {
+    name: "external_kotlinc_sun_license",
+    visibility: [":__subpackages__"],
+    copyright_notice: "Copyright (C) 1993 by Sun Microsystems, Inc.",
+    license_kinds: [
+        "legacy_notice",
+    ],
+    license_text: [
+        "license/third_party/sun_license.txt",
+    ],
+}
+
 license {
     name: "external_kotlinc_teamcity_service_messages_license",
     visibility: [":__subpackages__"],
