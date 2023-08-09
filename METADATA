@@ -11,18 +11,18 @@ third_party {
   }
   url {
     type: ARCHIVE
-    value: "https://github.com/JetBrains/kotlin/releases/download/v1.8.10/kotlin-compiler-1.8.10.zip"
+    value: "https://github.com/JetBrains/kotlin/releases/download/v1.9.0/kotlin-compiler-1.9.0.zip"
   }
   url {
     type: ARCHIVE
     value: "https://repo1.maven.org/maven2/org/jetbrains/intellij/deps/trove4j/1.0.20200330/trove4j-1.0.20200330-sources.jar"
   }
-  version: "v1.8.10"
+  version: "v1.9.0"
   license_type: RESTRICTED
   license_note: "would be RECIPROCAL save for:\n   license/third_party/rhino_LICENSE.txt\n   license/third_party/testdata/findbugs_license.txt\n   license/third_party/trove_license.txt\n   license/third_party/trove_readme_license.txt"
   last_upgrade_date {
     year: 2023
-    month: 3
-    day: 20
+    month: 7
+    day: 13
   }
 }
