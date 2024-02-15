@@ -80,6 +80,14 @@ java_import {
     exclude_dirs: ["META-INF/versions"],
 }
 
+java_import {
+    name: "kotlin-parcelize-runtime",
+    host_supported: true,
+    jars: ["lib/parcelize-runtime.jar"],
+    sdk_version: "core_current",
+    exclude_dirs: ["META-INF/versions"],
+}
+
 // See: http://go/android-license-faq
 license {
     name: "external_kotlinc_license",
