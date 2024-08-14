@@ -86,6 +86,13 @@ java_import {
     jars: ["lib/parcelize-runtime.jar"],
     sdk_version: "core_current",
     exclude_dirs: ["META-INF/versions"],
+    apex_available: [
+        "//apex_available:platform",
+        // AdServices is using androidx.datastore_datastore-core which requires the dependency
+        "com.android.adservices",
+        "com.android.extservices",
+        "com.android.ondevicepersonalization",
+    ],
 }
 
 // See: http://go/android-license-faq
