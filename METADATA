@@ -1,6 +1,6 @@
 # This project was upgraded with external_updater.
 # Usage: tools/external_updater/updater.sh update external/kotlinc
-# For more info, check https://cs.android.com/android/platform/superproject/+/main:tools/external_updater/README.md
+# For more info, check https://cs.android.com/android/platform/superproject/main/+/main:tools/external_updater/README.md
 
 name: "kotlinc"
 description: "Standalone Kotlin command-line compiler tools."
@@ -9,14 +9,14 @@ third_party {
   license_note: "would be RECIPROCAL save for:\n   license/third_party/rhino_LICENSE.txt\n   license/third_party/testdata/findbugs_license.txt\n   license/third_party/trove_license.txt\n   license/third_party/trove_readme_license.txt"
   last_upgrade_date {
     year: 2024
-    month: 3
-    day: 18
+    month: 10
+    day: 25
   }
   homepage: "https://kotlinlang.org/"
   identifier {
     type: "Archive"
-    value: "https://github.com/JetBrains/kotlin/releases/download/v1.9.23/kotlin-compiler-1.9.23.zip"
-    version: "v1.9.23"
+    value: "https://github.com/JetBrains/kotlin/releases/download/v2.0.21/kotlin-compiler-2.0.21.zip"
+    version: "v2.0.21"
   }
   identifier {
     type: "Archive"
