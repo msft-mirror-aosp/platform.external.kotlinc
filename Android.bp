@@ -32,6 +32,12 @@ java_import {
     jars: ["lib/annotations-13.0.jar"],
 }
 
+
+kotlin_plugin {
+    name: "kotlin-compose-compiler-plugin",
+    static_libs: ["kotlin-compose-compiler-hosted"],
+}
+
 // exclude_dirs is used to remove META-INF resources for java multi-release
 // jar support that soong does not support. https://openjdk.java.net/jeps/238
 
@@ -82,6 +88,25 @@ java_import {
     jars: ["lib/parcelize-runtime.jar"],
     sdk_version: "core_current",
     exclude_dirs: ["META-INF/versions"],
+    apex_available: [
+        "//apex_available:platform",
+        // AdServices is using androidx.datastore_datastore-core which requires the dependency
+        "com.android.adservices",
+        "com.android.extservices",
+        "com.android.ondevicepersonalization",
+    ],
+}
+
+java_import_host {
+    name: "kotlin-serialize-compiler-plugin-lib",
+    jars: ["lib/kotlin-serialization-compiler-plugin.jar"],
+    sdk_version: "core_current",
+    exclude_dirs: ["META-INF/versions"],
+}
+
+kotlin_plugin {
+    name: "kotlin-serialize-compiler-plugin",
+    static_libs: ["kotlin-serialize-compiler-plugin-lib"],
 }
 
 // See: http://go/android-license-faq
