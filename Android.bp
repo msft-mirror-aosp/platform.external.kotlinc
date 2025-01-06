@@ -32,6 +32,12 @@ java_import {
     jars: ["lib/annotations-13.0.jar"],
 }
 
+
+kotlin_plugin {
+    name: "kotlin-compose-compiler-plugin",
+    static_libs: ["kotlin-compose-compiler-hosted"],
+}
+
 // exclude_dirs is used to remove META-INF resources for java multi-release
 // jar support that soong does not support. https://openjdk.java.net/jeps/238
 
