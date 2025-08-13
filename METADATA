@@ -9,14 +9,14 @@ third_party {
   license_note: "would be RECIPROCAL save for:\n   license/third_party/rhino_LICENSE.txt\n   license/third_party/testdata/findbugs_license.txt\n   license/third_party/trove_license.txt\n   license/third_party/trove_readme_license.txt"
   last_upgrade_date {
     year: 2025
-    month: 2
-    day: 24
+    month: 6
+    day: 25
   }
   homepage: "https://kotlinlang.org/"
   identifier {
     type: "Archive"
-    value: "https://github.com/JetBrains/kotlin/releases/download/v2.1.10/kotlin-compiler-2.1.10.zip"
-    version: "v2.1.10"
+    value: "https://github.com/JetBrains/kotlin/releases/download/v2.2.0/kotlin-compiler-2.2.0.zip"
+    version: "v2.2.0"
   }
   identifier {
     type: "Archive"
