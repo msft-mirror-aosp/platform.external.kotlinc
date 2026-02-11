@@ -8,14 +8,14 @@ third_party {
   license_type: RESTRICTED
   license_note: "would be RECIPROCAL save for:\n   license/third_party/rhino_LICENSE.txt\n   license/third_party/testdata/findbugs_license.txt\n   license/third_party/trove_license.txt\n   license/third_party/trove_readme_license.txt"
   last_upgrade_date {
-    year: 2025
-    month: 6
-    day: 25
+    year: 2026
+    month: 2
+    day: 9
   }
   homepage: "https://kotlinlang.org/"
   identifier {
     type: "Archive"
-    value: "https://github.com/JetBrains/kotlin/releases/download/v2.2.0/kotlin-compiler-2.2.0.zip"
+    value: "https://cnsviewer.corp.google.com/placer/prod/home/kokoro-dedicated/build_artifacts/prod/android-studio/kotlin-verification-pipeline/custom-branches/release/22/20260209-094941/kotlin-compiler-2.2.0-custom-branch-22.zip"
     version: "v2.2.0"
   }
   identifier {
